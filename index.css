@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #b4b8ab;
+}
+
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-bar {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+    max-width: 650px;
+    
+    height: 4rem;
+    border-radius: 3rem;
+    background-color: #eef0eb;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination-bar__elem {
+    list-style: none;
+    height: 3rem;
+    width: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+    transition: color 0.3s ease;
+}
+
+.pagination-bar__elem:not(.dots):hover {
+    background-color: #284b637c;
+    color: #eef0eb;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.prev-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.prev-button i {
+    margin-right: 5px;
+}
+
+.next-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.next-button i {
+    margin-left: 5px;
+}
+
+.prev-button:hover {
+    border-radius: 3rem 1rem 1rem 3rem !important;
+}
+
+.next-button:hover {
+    border-radius: 1rem 3rem 3rem 1rem !important;
+}
+
+.paggination-active-page {
+    background-color: #284b63;
+    color: #eef0eb;
+    border-radius: 3rem;
+
+    cursor:default;
+}
+
